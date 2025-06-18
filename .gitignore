@@ -1,0 +1,71 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ========== GLOBAL IGNORE RULES ==========
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env*
+*.pem
+
+# Logs and debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# ========== FRONTEND IGNORE RULES ==========
+
+# Node dependencies
+finance-ai-frontend/node_modules/
+
+# Next.js build output
+finance-ai-frontend/.next/
+finance-ai-frontend/out/
+
+# Vercel deployment config
+finance-ai-frontend/.vercel/
+
+# Build output (custom or other tools)
+finance-ai-frontend/build/
+
+# Test coverage
+finance-ai-frontend/coverage/
+
+# Misc
+finance-ai-frontend/.DS_Store
+finance-ai-frontend/npm-debug.log*
+finance-ai-frontend/yarn-debug.log*
+finance-ai-frontend/yarn-error.log*
+
+# ========== BACKEND IGNORE RULES ==========
+
+# Python virtual environment
+finance-ai-backend/venv/
+
+# Local env file
+finance-ai-backend/env
+
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Coverage
+finance-ai-backend/coverage/
+
+# ========== MONOREPO-LEVEL IGNORE (OPTIONAL) ==========
+
+# Yarn 2+
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+/.pnp
+.pnp.*
